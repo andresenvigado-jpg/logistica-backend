@@ -11,6 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from src.infrastructure.database.connection import engine
 from src.infrastructure.database.models import user_model, cliente_model, bodega_model, puerto_model
 from src.infrastructure.database.models import envio_terrestre_model, envio_maritimo_model
+from src.infrastructure.database.models import tipo_producto_model
 from src.infrastructure.database.connection import Base
 
 from src.presentation.api.v1.auth_router import router as auth_router
