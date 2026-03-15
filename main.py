@@ -37,12 +37,8 @@ app = FastAPI(
 # CORS - Permite peticiones desde el frontend React
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "https://logistica-frontend-byeh0n1h0-andresenvigado-jpgs-projects.vercel.app",
-        "https://logistica-frontend-five.vercel.app",
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
